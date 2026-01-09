@@ -1,46 +1,54 @@
-# Amicron Faktura MicroOffice - Community Documentation
+# Amicron-Faktura – Community-Dokumentation
 
 [![DeepWiki](https://img.shields.io/badge/DeepWiki-satwareAG%2Fafmodocs-blue.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAABHNCSVQICAgIfAhkiAAAA05JREFUaEPtmUtyEzEQhvWTQyQLHNakyAJ7ZnyXZMEjXMGeK/AIi+QuHrMnbChYY7MIh8g01fJoopp70uhhEqqcbWTp06/uvtIrM2d/SQc0ICFQ9zfc4CYZoTPAswgSJCCUJUnAAoRHOAUOcATwbmVLWdGvH//PB8mnKqScAhsD0kYP3j/Yt5LPQe2KvcXmGvRHcDnpxfL2zOYJ1mFwrryWTz0advv1Ut4CJgf5uhDuDj5eUcAUoahrdf/56ebRWerabjMt/00Sh3UDtjgHtQNHwcRGOC98BJEAEymycmYcWwOprTgcB6VZ5JK5TAJ+fXGLBm3FDAmn6oPPjR4rKCAoJCal2eAiQp2x0vxTPB3ALO2CRkwmDy5WohzBDwSEFKRwPbknEggCPB/imwryccxX2NzoMCHhPkDwqYMr9tRcP5qNrMZHkVnOjRMWwLCcr8ohBVb1OMjxLwGCvjTikrsEOiA6fNyCrm8V1rP93iVPpwaE+gO0SSmGpXiXB+jikdf6SizrT5qKasx5j8ABbHpFTx+vFXp9EnYQmLx02h1QTTrl6eDqxLnGjporxl3NL3agEvXdT0WmEos+648sQOYAeJS9Q7bfUVoMGnjo4AZdUMQku50McDcMWcBPvr0SzbTAFDfvJqwLzgxwATnCgnp4wDl6Aa+Ax283gghmmj+vj7feE2KBBRMW3FzOpLOADl0Isb5587h/U4gGvkt5v60Z1VLG8BhYjbzRwyQZemwAd6cCR5/XFWLYZRIMpX39AR0tjaGGiGzLVyhse5C9RKC6ai42ppWPKiBagOvaYk8lO7Dajera6OZP46Lby5wKjw1HCRx7p9sVMOWGzb/vA1hwiWc6j3MvQDTogQkiqIhJV0nBQBTU+3okKCFDy9Wwfer0HjtxjE7493xIUQtHxnIwtx4mph26/HfwVNVDb4oI9RHmx5WGelRVlrtio43zboCLaxv46AZeB3IlTkwouebTr1y2NjSpHz68WNFjHvupy3q8TFn3Hos2IAk4Ju5dCo8B3wP7VPr/FGaKiG+T+v+TQqIrOqMTL1VdWV1DdmcbO8KXBz6esmYJWYKPwDL5b5FA1a0hwapHiom0r/cKaoqr+27/XcrS5UwSMbQAAABJRU5ErkJggg==)](https://deepwiki.com/satwareAG/afmodocs)
 
-**Community-driven documentation for Amicron Faktura MicroOffice by AFMO ERFA Arbeitskreis**
+**Community-Dokumentation für Amicron-Faktura – gepflegt vom Amicron ERFA Arbeitskreis**
 
-> 🤖 This repository is optimized for AI-powered documentation tools (DeepWiki, TypingMind RAG) and serves as the "Amicron Almanach" for support teams.
+> 🤖 Dieses Repository ist für KI-gestützte Dokumentationstools optimiert (DeepWiki, TypingMind RAG) und dient als „Amicron Almanach" für Support-Teams.
 
-## Purpose
+## Über Amicron-Faktura
 
-This repository provides:
+[Amicron-Faktura](https://amicron.de/) ist eine deutschsprachige Warenwirtschafts- und Fakturierungssoftware für kleine und mittlere Unternehmen, entwickelt von **Amicron Software** (gegründet 1991 von Andreas Kleine). Die Software wird seit über 30 Jahren kontinuierlich weiterentwickelt und in tausenden Betrieben eingesetzt.
 
-1. **Original Documentation** - Preserved vendor documentation (`docs/vendor-reference/`)
-2. **Community Enrichments** - Corrections, tutorials, tips from ERFA members (`docs/community/`)
-3. **Technical Reference** - Undocumented features, entity links, database schema (`docs/reference/`)
-4. **Support FAQs** - Per-topic FAQ files for AI-assisted support (`docs/faq/`)
+### satware AG als Vertriebspartner
 
-## Quick Links
+Die **[satware AG](https://satware.com)** ist langjähriger Vertriebspartner von Amicron Software und setzt selbst seit der DOS-Version **Topfakt 2.0** (Anfang der 1990er Jahre) auf Amicron-Produkte. Mit über 30 Jahren praktischer Erfahrung im täglichen Einsatz bringen wir tiefgehendes Fachwissen in diese Community-Dokumentation ein.
 
-| Section | Description |
-|---------|-------------|
-| [Getting Started](docs/getting-started/overview.md) | First steps with Amicron |
-| [Reference](docs/reference/) | Technical reference materials |
-| [FAQs](docs/faq/) | Frequently asked questions by topic |
-| [Troubleshooting](docs/troubleshooting/) | Common issues and solutions |
-| [Community](docs/community/) | Tutorials and tips from ERFA members |
+## Zweck
 
-## Contributing
+Dieses Repository bietet:
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding documentation.
+1. **Original-Dokumentation** – Archivierte Hersteller-Dokumentation (`docs/vendor-reference/`)
+2. **Community-Erweiterungen** – Korrekturen, Tutorials, Tipps von ERFA-Mitgliedern (`docs/community/`)
+3. **Technische Referenz** – Undokumentierte Features, Entity-Links, Datenbankschema (`docs/reference/`)
+4. **Support-FAQs** – Themenspezifische FAQ-Dateien für KI-gestützten Support (`docs/faq/`)
 
-**ERFA members**: Your support tickets and solutions can become FAQ entries!
+## Schnellzugriff
 
-## AI Integration
+| Bereich | Beschreibung |
+|---------|--------------|
+| [Erste Schritte](docs/getting-started/overview.md) | Einführung in Amicron-Faktura |
+| [Referenz](docs/reference/) | Technische Referenzmaterialien |
+| [FAQs](docs/faq/) | Häufig gestellte Fragen nach Themen |
+| [Fehlerbehebung](docs/troubleshooting/) | Bekannte Probleme und Lösungen |
+| [Community](docs/community/) | Tutorials und Tipps von ERFA-Mitgliedern |
 
-This documentation is indexed by:
-- **[DeepWiki](https://deepwiki.com/satwareAG/afmodocs)** - AI-powered wiki (auto-refreshes weekly)
-- **TypingMind** - Custom RAG wiki support
+## Mitwirken
 
-## License
+Siehe [CONTRIBUTING.md](CONTRIBUTING.md) für Richtlinien zum Hinzufügen von Dokumentation.
 
-Documentation content © satware AG and AFMO ERFA Arbeitskreis contributors.
+**ERFA-Mitglieder**: Eure Support-Tickets und Lösungen können zu FAQ-Einträgen werden!
+
+## KI-Integration
+
+Diese Dokumentation wird indexiert von:
+- **[DeepWiki](https://deepwiki.com/satwareAG/afmodocs)** – KI-gestütztes Wiki (wöchentliche Aktualisierung)
+- **TypingMind** – Benutzerdefinierte RAG-Wiki-Unterstützung
+
+## Lizenz
+
+Dokumentationsinhalte © satware AG und Amicron ERFA Arbeitskreis Mitwirkende.
 
 ---
 
-*Maintained by [satware AG](https://satware.com) • Contact: mw@satware.com*
+*Gepflegt von [satware AG](https://satware.com) • Kontakt: mw@satware.com*

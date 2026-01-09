@@ -1,23 +1,23 @@
 ---
-title: "Getting Started with Amicron Faktura"
-category: "Getting Started"
-scope: "Use when user is new to Amicron or asks about first steps, installation, or basic setup"
+title: "Erste Schritte mit Amicron-Faktura"
+category: "Erste Schritte"
+scope: "Verwenden wenn Benutzer neu bei Amicron ist oder nach ersten Schritten, Installation oder grundlegender Einrichtung fragt"
 last_updated: "2026-01-09"
-search_keywords: ["start", "anfang", "installation", "setup", "einrichtung", "erste schritte"]
+search_keywords: ["start", "anfang", "installation", "setup", "einrichtung", "erste schritte", "neu", "beginnen"]
 ---
 
-# Getting Started with Amicron Faktura
+# Erste Schritte mit Amicron-Faktura
 
-> 🚧 **Placeholder**: This document is awaiting content from the ERFA community.
+> 🚧 **Platzhalter**: Dieses Dokument wartet auf Inhalte aus der ERFA-Community.
 
-## Topics to Cover
+## Geplante Themen
 
-- [ ] System requirements
-- [ ] Installation steps
-- [ ] First-time configuration
-- [ ] Creating your first invoice
-- [ ] Basic navigation
+- [ ] Systemanforderungen
+- [ ] Installationsschritte
+- [ ] Erstkonfiguration
+- [ ] Erste Rechnung erstellen
+- [ ] Grundlegende Navigation
 
-## Contributing
+## Mitwirken
 
-Help us build this documentation! See [CONTRIBUTING.md](../../CONTRIBUTING.md) for guidelines.
+Hilf uns, diese Dokumentation aufzubauen! Siehe [CONTRIBUTING.md](../../CONTRIBUTING.md) für Richtlinien.

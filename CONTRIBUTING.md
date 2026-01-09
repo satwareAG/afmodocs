@@ -1,97 +1,97 @@
-# Contributing to Amicron Faktura Documentation
+# Mitwirken an der Amicron-Faktura Dokumentation
 
-Thank you for contributing to the AFMO ERFA community documentation!
+Vielen Dank für deinen Beitrag zur Amicron ERFA Community-Dokumentation!
 
-## How to Contribute
+## Wie du beitragen kannst
 
-### ERFA Members: Adding FAQs from Support Tickets
+### ERFA-Mitglieder: FAQs aus Support-Tickets hinzufügen
 
-1. **Identify a common question** from your support tickets
-2. **Find the right FAQ file** in `docs/faq/` (or request a new one)
-3. **Add your Q&A** following the template below
-4. **Submit a Pull Request**
+1. **Identifiziere eine häufige Frage** aus deinen Support-Tickets
+2. **Finde die passende FAQ-Datei** in `docs/faq/` (oder fordere eine neue an)
+3. **Füge deinen Frage-Antwort-Eintrag hinzu** nach der Vorlage unten
+4. **Erstelle einen Pull Request**
 
-### FAQ Entry Template
+### FAQ-Eintrags-Vorlage
 
 ```markdown
-## Q: [Clear question as the customer would ask it]
+## F: [Klare Frage, wie der Kunde sie stellen würde]
 
-**Quick Answer:** [1-2 sentence answer]
+**Kurze Antwort:** [1-2 Sätze Antwort]
 
-**Details:** [Longer explanation if needed]
+**Details:** [Ausführlichere Erklärung bei Bedarf]
 
-**See also:** [Link to full documentation](../reference/related-doc.md)
+**Siehe auch:** [Link zur vollständigen Dokumentation](../reference/zugehoerige-doku.md)
 
-**Source:** ERFA Support Ticket (anonymized)
+**Quelle:** ERFA Support-Ticket (anonymisiert)
 ```
 
-### Adding Technical Reference
+### Technische Referenz hinzufügen
 
-For undocumented features or technical details:
+Für undokumentierte Features oder technische Details:
 
-1. Create a new file in `docs/reference/`
-2. Use the frontmatter template below
-3. Include examples and screenshots where possible
+1. Erstelle eine neue Datei in `docs/reference/`
+2. Verwende die Frontmatter-Vorlage unten
+3. Füge Beispiele und Screenshots hinzu, wo möglich
 
-### Frontmatter Template
+### Frontmatter-Vorlage
 
 ```yaml
 ---
-title: "Your Document Title"
+title: "Dein Dokumenttitel"
 category: "Reference|FAQ|Tutorial|Troubleshooting"
-scope: "Use when user asks about [specific topic]"
-last_updated: "YYYY-MM-DD"
-author: "Your Name or ERFA-anonymous"
-related_topics: ["topic1", "topic2"]
-search_keywords: ["keyword1", "keyword2"]
+scope: "Verwenden wenn Benutzer nach [spezifischem Thema] fragt"
+last_updated: "JJJJ-MM-TT"
+author: "Dein Name oder ERFA-anonym"
+related_topics: ["thema1", "thema2"]
+search_keywords: ["stichwort1", "stichwort2"]
 ---
 ```
 
-## Documentation Structure
+## Dokumentationsstruktur
 
 ```
 docs/
-├── getting-started/     # Quickstart guides
-├── reference/           # Technical reference (single-topic files)
-├── vendor-reference/    # Original Amicron docs (do not modify)
-├── community/           # Tutorials and tips
-├── faq/                 # Per-topic FAQ files
-└── troubleshooting/     # Problem-solution docs
+├── getting-started/     # Schnellstart-Anleitungen
+├── reference/           # Technische Referenz (Einzelthemen-Dateien)
+├── vendor-reference/    # Original Amicron-Doku (nicht ändern)
+├── community/           # Tutorials und Tipps
+├── faq/                 # Themenspezifische FAQ-Dateien
+└── troubleshooting/     # Problem-Lösungs-Dokumentation
 ```
 
-## Guidelines
+## Richtlinien
 
-### DO ✅
+### MACHEN ✅
 
-- Keep files focused (1000-3000 words, single topic)
-- Use clear, searchable headings
-- Include practical examples
-- Link to related documentation
-- Add frontmatter metadata
+- Dateien fokussiert halten (1000-3000 Wörter, einzelnes Thema)
+- Klare, durchsuchbare Überschriften verwenden
+- Praktische Beispiele einbeziehen
+- Auf verwandte Dokumentation verlinken
+- Frontmatter-Metadaten hinzufügen
 
-### DON'T ❌
+### NICHT MACHEN ❌
 
-- Create monolithic documents
-- Duplicate existing content
-- Modify `vendor-reference/` files
-- Include customer-identifiable information
-- Add unverified information without marking it
+- Monolithische Dokumente erstellen
+- Bestehende Inhalte duplizieren
+- Dateien in `vendor-reference/` ändern
+- Kundenidentifizierbare Informationen einbeziehen
+- Ungeprüfte Informationen ohne Kennzeichnung hinzufügen
 
-## RAG Optimization Tips
+## RAG-Optimierungstipps
 
-This documentation is indexed by AI tools. To improve retrieval:
+Diese Dokumentation wird von KI-Tools indexiert. Um die Auffindbarkeit zu verbessern:
 
-1. **Use descriptive headings** that match how users ask questions
-2. **Include keywords** in frontmatter `search_keywords`
-3. **Keep paragraphs focused** on single concepts
-4. **Use bullet points** for lists of steps or items
+1. **Beschreibende Überschriften verwenden**, die zur Art passen, wie Benutzer Fragen stellen
+2. **Stichwörter einbeziehen** im Frontmatter `search_keywords`
+3. **Absätze fokussiert halten** auf einzelne Konzepte
+4. **Aufzählungszeichen verwenden** für Listen von Schritten oder Elementen
 
-## Questions?
+## Fragen?
 
-Contact the maintainers:
+Kontaktiere die Maintainer:
 - Michael Wegener: mw@satware.com
-- ERFA Arbeitskreis: [Internal contact]
+- ERFA Arbeitskreis: [Interner Kontakt]
 
 ---
 
-*Documentation is auto-indexed by DeepWiki weekly when the badge is present in README.*
+*Die Dokumentation wird wöchentlich automatisch von DeepWiki indexiert, wenn das Badge in der README vorhanden ist.*

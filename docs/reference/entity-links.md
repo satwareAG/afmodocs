@@ -1,35 +1,35 @@
 ---
-title: "Entity Links Reference"
-category: "Reference"
-scope: "Use when user asks about internal links, hyperlinks, cross-referencing records, or navigating between entities in Amicron"
+title: "Entity-Links Referenz"
+category: "Referenz"
+scope: "Verwenden wenn Benutzer nach internen Links, Hyperlinks, Querverweisen zwischen Datensätzen oder Navigation zwischen Entitäten in Amicron fragt"
 last_updated: "2026-01-09"
 author: "Michael Wegener, satware AG"
-related_topics: ["Schnellsuche", "LFDNR", "Database Navigation", "Textfelder"]
+related_topics: ["Schnellsuche", "LFDNR", "Datenbank-Navigation", "Textfelder"]
 search_keywords: ["link", "termin", "artikel", "aufgabe", "hyperlink", "navigation", "verknüpfung", "lfdnr", "schnellsuche"]
 ---
 
-# Entity Links in Amicron Faktura
+# Entity-Links in Amicron-Faktura
 
-Amicron Faktura supports internal hyperlinks that allow cross-referencing between records. These links can be typed or pasted into text fields (Bemerkung, Notizen, etc.) and become clickable navigation elements.
+Amicron-Faktura unterstützt interne Hyperlinks, die Querverweise zwischen Datensätzen ermöglichen. Diese Links können in Textfelder (Bemerkung, Notizen, etc.) eingegeben oder eingefügt werden und werden zu klickbaren Navigationselementen.
 
-## Link Format
+## Link-Format
 
 ```
 \\EntityType:LFDNR
-\\EntityType:LFDNR (Optional Label)
+\\EntityType:LFDNR (Optionale Bezeichnung)
 ```
 
-### Components
+### Bestandteile
 
-| Component | Description | Required |
-|-----------|-------------|----------|
-| `\\` | Double backslash prefix | ✅ Yes |
-| `EntityType` | Entity identifier (case-insensitive) | ✅ Yes |
-| `:` | Separator | ✅ Yes |
-| `LFDNR` | Internal record ID (database column `LFDNR`) | ✅ Yes |
-| `(Label)` | Human-readable description | ❌ Optional |
+| Bestandteil | Beschreibung | Erforderlich |
+|-------------|--------------|--------------|
+| `\\` | Doppelter Backslash als Präfix | ✅ Ja |
+| `EntityType` | Entitätsbezeichner (Groß-/Kleinschreibung egal) | ✅ Ja |
+| `:` | Trennzeichen | ✅ Ja |
+| `LFDNR` | Interne Datensatz-ID (Datenbankspalte `LFDNR`) | ✅ Ja |
+| `(Bezeichnung)` | Lesbare Beschreibung | ❌ Optional |
 
-### Examples
+### Beispiele
 
 ```
 \\Artikel:12345
@@ -38,47 +38,47 @@ Amicron Faktura supports internal hyperlinks that allow cross-referencing betwee
 \\aufgabe:14175522
 ```
 
-## Behavior
+## Verhalten
 
-| Aspect | Detail |
+| Aspekt | Detail |
 |--------|--------|
-| **Case Sensitivity** | **Case-insensitive** - `\\Termin:`, `\\terMin:`, `\\termin:` all work |
-| **Label** | Optional - `\\termin:14186330` works without `(Label)` |
-| **Rendering** | Amicron converts to clickable hyperlink in text fields |
-| **Navigation** | Click opens the referenced record in its detail view |
-| **Schnellsuche** | Links can be pasted into Quick Search for navigation |
+| **Groß-/Kleinschreibung** | **Nicht relevant** – `\\Termin:`, `\\terMin:`, `\\termin:` funktionieren alle |
+| **Bezeichnung** | Optional – `\\termin:14186330` funktioniert ohne `(Bezeichnung)` |
+| **Darstellung** | Amicron konvertiert zu klickbarem Hyperlink in Textfeldern |
+| **Navigation** | Klick öffnet den referenzierten Datensatz in seiner Detailansicht |
+| **Schnellsuche** | Links können zum Navigieren in die Schnellsuche eingefügt werden |
 
-## Known Entity Types
+## Bekannte Entity-Typen
 
-The following entity types are confirmed to support links. The `LFDNR` column in each database table contains the record ID.
+Die folgenden Entity-Typen unterstützen nachweislich Links. Die `LFDNR`-Spalte in jeder Datenbanktabelle enthält die Datensatz-ID.
 
-| Entity Type | German Name | Database Table | Description |
-|-------------|-------------|----------------|-------------|
-| `Artikel` | Artikel | ARTIKEL | Products/Articles |
-| `Auftrag` | Kundenauftrag | AUFTRAG | Customer orders |
-| `Bestellung` | Lieferantenbestellung | AUFTRAG | Supplier orders |
-| `Kunde` | Kunde/Adresse | ADRESSEN | Customers |
-| `Lieferant` | Lieferant | ADRESSEN | Suppliers |
-| `Mitarbeiter` | Mitarbeiter | MITARBEITER | Employees |
-| `Termin` | Termin | TERMINE | Appointments |
-| `Aufgabe` | Aufgabe | AUFGABEN | Tasks |
-| `contact` | Kontakt | KONTAKTE | Contacts |
-| `apos` | Auftragsposition | ATRPOS | Order line items |
-| `bplate` | Textbaustein | TXTBAUSTEINE | Text templates |
+| Entity-Typ | Deutscher Name | Datenbanktabelle | Beschreibung |
+|------------|----------------|------------------|--------------|
+| `Artikel` | Artikel | ARTIKEL | Produkte/Artikel |
+| `Auftrag` | Kundenauftrag | AUFTRAG | Kundenaufträge |
+| `Bestellung` | Lieferantenbestellung | AUFTRAG | Lieferantenbestellungen |
+| `Kunde` | Kunde/Adresse | ADRESSEN | Kunden |
+| `Lieferant` | Lieferant | ADRESSEN | Lieferanten |
+| `Mitarbeiter` | Mitarbeiter | MITARBEITER | Mitarbeiter |
+| `Termin` | Termin | TERMINE | Termine |
+| `Aufgabe` | Aufgabe | AUFGABEN | Aufgaben |
+| `contact` | Kontakt | KONTAKTE | Kontakte |
+| `apos` | Auftragsposition | ATRPOS | Auftragspositionen |
+| `bplate` | Textbaustein | TXTBAUSTEINE | Textbausteine |
 
-> ⚠️ **Note**: This list is based on community research. Additional entity types may exist. See [Contributing](../../CONTRIBUTING.md) to add more.
+> ⚠️ **Hinweis**: Diese Liste basiert auf Community-Recherche. Weitere Entity-Typen können existieren. Siehe [Mitwirken](../../CONTRIBUTING.md) um weitere hinzuzufügen.
 
-## Usage Examples
+## Anwendungsbeispiele
 
-### In Text Fields
+### In Textfeldern
 
-Links work in any multi-line text field:
+Links funktionieren in jedem mehrzeiligen Textfeld:
 
 - **Bemerkung** (Remarks)
 - **Notizen** (Notes)
 - **Beschreibung** (Description)
 
-Example in a Termin (Appointment):
+Beispiel in einem Termin:
 
 ```
 08.01.2026 DH
@@ -88,42 +88,42 @@ Bitte:
 2. Rückruf vereinbaren
 ```
 
-### In Schnellsuche
+### In der Schnellsuche
 
-Paste a link directly into the Quick Search field to navigate:
+Füge einen Link direkt in das Schnellsuche-Feld ein zum Navigieren:
 
 ```
 \\termin:14186330
 ```
 
-### Copying Links
+### Links kopieren
 
-1. Right-click on a record
-2. Select "Link kopieren" or similar option
-3. Paste into target text field
+1. Rechtsklick auf einen Datensatz
+2. Wähle „Link kopieren" oder ähnliche Option
+3. In Ziel-Textfeld einfügen
 
-The copied format includes the label:
+Das kopierte Format enthält die Bezeichnung:
 ```
 \\Termin:14186330 (MW: DieJugendherbergen AI business platform anlegen (oB))
 ```
 
-## Finding the LFDNR
+## Die LFDNR finden
 
-The `LFDNR` is the internal record ID. To find it:
+Die `LFDNR` ist die interne Datensatz-ID. So findest du sie:
 
-1. **In the UI**: Some views display the ID in the status bar or title
-2. **In the database**: Query the `LFDNR` column directly
-3. **Via link copy**: Right-click → Copy Link includes the LFDNR
+1. **In der Oberfläche**: Einige Ansichten zeigen die ID in der Statusleiste oder Titelzeile
+2. **In der Datenbank**: Direkte Abfrage der `LFDNR`-Spalte
+3. **Über Link kopieren**: Rechtsklick → Link kopieren enthält die LFDNR
 
-## Technical Details
+## Technische Details
 
-### Database Implementation
+### Datenbank-Implementierung
 
-Links are stored as plain text in database fields. Amicron's UI layer parses the `\\EntityType:LFDNR` pattern and renders clickable links.
+Links werden als Klartext in Datenbankfeldern gespeichert. Amicrons UI-Schicht parst das `\\EntityType:LFDNR`-Muster und stellt klickbare Links dar.
 
-### PHP Entity Bundle Reference
+### PHP Entity Bundle Referenz
 
-For developers: The `__toString()` method in entity classes returns the link format:
+Für Entwickler: Die `__toString()`-Methode in Entity-Klassen gibt das Link-Format zurück:
 
 ```php
 public function __toString(): string
@@ -132,34 +132,34 @@ public function __toString(): string
 }
 ```
 
-See: [satag-amicron-entity-bundle](https://github.com/satwareAG/satag-amicron-entity-bundle) (internal)
+Siehe: [satag-amicron-entity-bundle](https://github.com/satwareAG/satag-amicron-entity-bundle) (intern)
 
-## Troubleshooting
+## Fehlerbehebung
 
-### Link Not Clickable
+### Link nicht klickbar
 
-- Ensure double backslash `\\` prefix (not single `\`)
-- Check entity type spelling (though case-insensitive)
-- Verify LFDNR exists in the database
+- Stelle sicher, dass doppelter Backslash `\\` als Präfix verwendet wird (nicht einzelnes `\`)
+- Überprüfe die Schreibweise des Entity-Typs (obwohl Groß-/Kleinschreibung egal ist)
+- Verifiziere, dass die LFDNR in der Datenbank existiert
 
-### Link Opens Wrong Record
+### Link öffnet falschen Datensatz
 
-- The LFDNR may have been reused (rare)
-- Record may have been deleted and ID reassigned
+- Die LFDNR wurde möglicherweise wiederverwendet (selten)
+- Datensatz wurde möglicherweise gelöscht und ID neu vergeben
 
-## Future Research
+## Zukünftige Recherche
 
-The following entity types need verification:
+Die folgenden Entity-Typen müssen noch verifiziert werden:
 
 - [ ] Rechnung (Invoice)
 - [ ] Angebot (Quote)
 - [ ] Lieferschein (Delivery note)
 - [ ] Projekt (Project)
 
-**ERFA members**: Please contribute findings via [GitHub Issues](https://github.com/satwareAG/afmodocs/issues).
+**ERFA-Mitglieder**: Bitte Erkenntnisse über [GitHub Issues](https://github.com/satwareAG/afmodocs/issues) beitragen.
 
 ---
 
-**See also:**
-- [Keyboard Shortcuts](./keyboard-shortcuts.md) (placeholder)
-- [Database Schema](./database-schema.md) (placeholder)
+**Siehe auch:**
+- [Tastenkürzel](./keyboard-shortcuts.md) (Platzhalter)
+- [Datenbankschema](./database-schema.md) (Platzhalter)
