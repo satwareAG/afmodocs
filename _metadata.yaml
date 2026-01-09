@@ -1,0 +1,59 @@
+# Knowledge Base Metadata for RAG Systems
+# This file defines scope and retrieval rules for AI tools
+
+knowledge_base:
+  name: "Amicron-Faktura und Amicron-Mailoffice Dokumentation"
+  description: |
+    Use this KB for Amicron-Faktura and Amicron-Mailoffice questions including:
+    - Feature documentation and how-to guides
+    - Technical reference (entity links, database schema, keyboard shortcuts)
+    - Troubleshooting and support FAQs
+    - Community tips and workarounds
+    
+    Do NOT use for: General business software questions unrelated to Amicron.
+  
+  language: "de"
+  secondary_languages: ["en"]
+  
+  scope:
+    - path: "docs/getting-started/**"
+      purpose: "Initial setup, first steps, basic usage"
+      
+    - path: "docs/reference/**"
+      purpose: "Technical reference: entity links, database schema, undocumented features"
+      
+    - path: "docs/faq/**"
+      purpose: "Frequently asked questions organized by topic"
+      
+    - path: "docs/troubleshooting/**"
+      purpose: "Common issues and solutions"
+      
+    - path: "docs/community/**"
+      purpose: "Tutorials, tips, and workarounds from satware® Amicron Business Solutions Community members"
+      
+    - path: "docs/vendor-reference/**"
+      purpose: "Original vendor documentation (canonical source)"
+
+  conditional_retrieval:
+    - condition: "user asks about links, hyperlinks, or cross-referencing"
+      use_paths: ["docs/reference/entity-links.md"]
+      
+    - condition: "user asks about keyboard shortcuts"
+      use_paths: ["docs/reference/keyboard-shortcuts.md"]
+      
+    - condition: "user asks about installation or setup"
+      use_paths: ["docs/getting-started/**"]
+      
+    - condition: "user reports an error or problem"
+      use_paths: ["docs/troubleshooting/**", "docs/faq/**"]
+
+  content_tiers:
+    tier1_canonical: "docs/vendor-reference/"
+    tier2_enriched: "docs/community/"
+    tier3_derived: "docs/faq/"
+
+  maintenance:
+    review_schedule: "quarterly"
+    maintainer: "@satwareAG"
+    contact: "mw@satware.com"
+    community: "https://www.facebook.com/groups/amicron"
