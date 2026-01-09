@@ -69,7 +69,13 @@ Diese Dokumentation wird indexiert von:
 
 ## Lizenz
 
-Dokumentationsinhalte © satware AG und satware® Amicron Business Solutions Community Mitwirkende.
+[![CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
+
+Diese Community-Dokumentation steht unter der [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) Lizenz.
+
+**⚠️ Wichtig:** Dies ist **inoffizielle Community-Dokumentation**. Für rechtliche Hinweise, Markenrechte und Haftungsausschlüsse siehe [LEGAL.md](LEGAL.md).
+
+© 2026 satware AG und satware® Amicron Business Solutions Community Mitwirkende.
 
 ---
 
